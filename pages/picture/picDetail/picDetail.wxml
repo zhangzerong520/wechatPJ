@@ -1,0 +1,107 @@
+<view>
+  <view class="title">
+    <image src="{{picture.titleImg}}">
+    </image>
+  </view>
+
+  <view class="big_img">
+    <view class="img_box">
+      <image src="{{picture.bigImg1}}"></image>
+    </view>
+    <text class="flag">{{picture.bigFlag1}}</text>
+  </view>
+
+  <view class="big_img">
+    <view class="img_box">
+      <image src="{{picture.bigImg2}}"></image>
+    </view>
+    <text class="flag">{{picture.bigFlag2}}</text>
+  </view>
+
+
+ <view class="big_img">
+    <view class="img_box">
+      <image src="{{picture.bigImg3}}"></image>
+    </view>
+    <text class="flag">{{picture.bigFlag3}}</text>
+  </view>
+
+
+
+  <view class="small_column">
+   
+    <view class="small_row">
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg1}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag1}}</text>
+      </view>
+
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg2}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag2}}</text>
+      </view>
+    </view>
+
+
+  <view class="small_row">
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg3}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag3}}</text>
+      </view>
+
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg4}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag4}}</text>
+      </view>
+    </view>
+
+   
+    <view class="small_row">
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg5}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag5}}</text>
+      </view>
+
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg6}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag6}}</text>
+      </view>
+    </view>
+
+
+  <view class="small_row">
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg7}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag7}}</text>
+      </view>
+
+      <view class="small">
+        <view class="small_box">
+          <image src='{{picture.smallImg8}}'></image>
+        </view>
+        <text class="flag">{{picture.smallFlag8}}</text>
+      </view>
+    </view>
+   
+
+
+  </view>
+
+
+
+
+</view>

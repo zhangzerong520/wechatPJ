@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle": "red",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "个人头像",
+  "navigationBarTextStyle": "#fff"
+}

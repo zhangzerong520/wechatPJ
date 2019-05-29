@@ -1,0 +1,33 @@
+ <view class='news_list'>
+   <block wx:for="{{mediumInfo.mediumList}}" wx:for-item="medium" wx:key="*">
+        <view class="news_item" bindtap='showDetail' data-medium-id='{{medium.id}}'>
+          <view class="news_title">{{medium.title}}</view>
+
+          <view class="video">
+            <video id="myVideo" class="myVideo" src="{{medium.video}}" custom-cache="{{false}}">
+            </video>
+            <cover-view class="controls" style="display:{{tab_image}};width:100%;">
+              <cover-image src="{{medium.coverimg}}" />
+            </cover-view>
+            <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+              <cover-image bindtap="bindplay" src="/assets/home/icon/play.png" style="padding-left:20rpx;width:120rpx;" />
+            </cover-view>
+
+
+            <view class="public_info">
+              <view class="name">{{medium.time}}</view>
+            </view>
+          </view>
+        </view>
+        <view class='hr7'></view>
+
+
+  </block>
+  
+    
+
+
+
+  
+
+      </view>

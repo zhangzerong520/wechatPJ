@@ -1,0 +1,70 @@
+page { 
+  background-color: #f3f3f3; 
+}
+
+.box{
+width:87%;
+margin-left: 50rpx;
+margin-right: 60rpx;
+margin-top: 80rpx;
+height: 900rpx;
+background: white;
+border-radius: 40rpx;
+}
+
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  padding-top:30rpx;
+
+}
+.userInfo .avatar{
+  margin-left: 60rpx;
+}
+.userInfo .avatar image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.userInfo .Info{
+  display: flex;
+  flex-direction: column;
+  padding-top: 14rpx;
+}
+.userInfo .Info .name_sex{
+  display: flex;
+  flex-direction: row; 
+}
+.userInfo .Info .name_sex image{
+  width:50rpx;
+  height: 50rpx;
+
+}
+.userInfo .Info .name_sex .name{
+  font-size: 32rpx;
+  font-weight: bold;
+  padding-top: 6rpx;
+  color:black;
+}
+.userInfo .Info .ares{
+  color:#aaa5a5;
+  font-size: 28rpx;
+  padding-top: 14rpx;
+}
+.myvm{
+  margin-top: 20rpx;
+}
+.myvm image{
+  width:400prx;
+  height:600rpx;
+}
+
+.addWx{
+padding-left: 140rpx;
+padding-top: 10rpx;
+}
+
+
+.addWx text{
+ color:#726f6f;
+ font-size: 24rpx;
+}

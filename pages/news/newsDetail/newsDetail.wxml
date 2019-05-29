@@ -1,0 +1,106 @@
+<view class="top_img">
+  <image src="{{news.timg}}"></image>
+</view>
+
+<view class="title">
+  {{news.title}}
+</view>
+
+
+
+
+
+<view class="new_content">
+
+  <view class="news_word" wx:if="{{!news.nr1==null||!news.nr1==''}}">
+    <text style="color:black;font-weight:bold;">{{news.firstword}}</text> 
+    {{news.nr1}}
+  </view>
+    <view class="new_image_style">
+    <image src="{{news.img1}}"></image>
+  </view>
+
+   <view wx:if="{{!news.img1==null||!news.img1==''}}" class="flag">
+    {{news.flag1}}
+  </view>
+
+ <view wx:if="{{!news.nr2==null||!news.nr2==''}}" class="news_word">
+    {{news.nr2}}
+  </view>
+
+  <view wx:if="{{!news.img2==null||!news.img2==''}}" class="new_image_style1">
+    <image src="{{news.img2}}"></image>
+  </view>
+
+  <view wx:if="{{!news.img2==null||!news.img2==''}}" class="flag">
+    {{news.flag2}}
+  </view>
+
+ <view class="news_word" wx:if="{{!news.nr3==null||!news.nr3==''}}">
+    {{news.nr3}}
+  </view>
+
+  <view class="new_image_style3" wx:if="{{!news.img3==null||!news.img3==''}}">
+    <image src="{{news.img3}}"></image>
+  </view>
+  <view class="flag" wx:if="{{!news.img3==null||!news.img3==''}}">
+    {{news.flag3}}
+  </view>
+ 
+  <view class="news_word" wx:if="{{!news.nr4==null||!news.nr4==''}}">
+    {{news.nr4}}
+  </view>
+
+  <view class="new_image_style2" wx:if="{{!news.img4==null||!news.img4==''}}">
+    <image src="{{news.img4}}"></image>
+  </view>
+  <view class="flag" wx:if="{{!news.img4==null||!news.img4==''}}">
+    {{news.flag4}}
+  </view>
+
+ 
+
+  <view class="readingnum">
+    {{news.readingnum}}次阅读
+  </view>
+
+  <view class="hr" />
+
+  <view class="news_title">
+    最新评论
+  </view>
+
+  <view class="comment">
+    <image src="/assets/news/zr.jpg"></image>
+    <view class="people_info">
+      <view class="tops">
+        <view class="name">zzr</view>
+        <view class="gengduo">
+          <image src="/assets/news/gengduo.png"></image>
+        </view>
+      </view>
+      <view class="neirong">大华软牛逼！我爱母校。</view>
+      <view class="bts">
+        <view class="times">1天前</view>
+        <view class="zan">
+          <view class="pic">
+            <image src="/assets/news/zan.png"></image>
+          </view>
+          <view class="words">赞</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="hr" />
+
+
+
+  <view class="hr" />
+
+
+
+
+
+
+
+</view>

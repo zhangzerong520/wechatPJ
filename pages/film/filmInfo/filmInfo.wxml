@@ -1,0 +1,50 @@
+<!--pages/film/film.wxml-->
+
+
+  <view class="contain">
+
+
+        <block wx:for="{{movieInfo.filmlist}}" wx:for-item="fi" wx:key="*">
+          <view class="items">
+
+            <view>
+              <image src="http://172.16.112.27/{{fi.image}}" style="width:80px;height:110px;"></image>
+            </view>
+            <view class="content" bindtap='loadDetail' id="{{fi.id}}">
+              <view class="titles">
+                <view class="title">{{fi.title}}</view>
+
+                <view wx:if="{{fi.is3D==1}}" class="play_form">
+                  <view class="dd">3D</view>
+                  <view class="form">IMAX</view>
+                </view>
+
+                <view wx:else class="play_form1">
+                  <view class="dd">2D</view>
+                  <view class="form">中国巨幕</view>
+                </view>
+              </view>
+
+              <view class="score">淘票票评分
+                <text class="scores">{{fi.score}}</text>
+              </view>
+              <view class="director">导演:
+                <text class="director_name">{{fi.people.diretor}}</text>
+              </view>
+              <view class="actor">演员:
+                <text class="actor_name">{{fi.people.actor1}} {{fi.people.actor2}} {{fi.people.actor3}} </text>
+              </view>
+              <view>{{time}}</view>
+            </view>
+           
+            <view wx:if="{{fi.isPlay==1}}" class="buy">
+              购票
+            </view>
+            <view wx:else class="pre_buy">
+              预售
+            </view>
+          </view>
+          <view class="hr" />
+        </block>
+   
+  </view>

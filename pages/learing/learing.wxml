@@ -1,0 +1,22 @@
+<view>
+
+  <view class="img">
+    <image src="https://www.sise.com.cn/Public/images/teacher.jpg"></image>
+  </view>
+
+ <block wx:for="{{lectureInfo.lecturelist}}" wx:for-item="lecture" wx:key="*">
+
+  <view class="box" data-lecture-id='{{lecture.id}}' 
+  bindtap='entryDetail'
+  >
+    <view class="title">
+      {{lecture.title}}
+    </view>
+    <view class="time">
+      {{lecture.time}}
+    </view>
+  </view>
+
+</block>
+
+</view>

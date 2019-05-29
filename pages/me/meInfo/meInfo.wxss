@@ -1,0 +1,87 @@
+/* pages/test/test.wxss */
+page { 
+  background-color: #f3f3f3; 
+}
+.container_box{
+  background: white;
+  width: 100%;
+  height: 550rpx;
+}
+.container_box .column{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40rpx;
+  height: 120rpx;
+}
+.container_box .column text{
+margin-left: 40rpx;
+margin-top: 40rpx;
+font-size: 34rpx;
+color:rgb(68, 67, 67);
+
+}
+.column .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  position: absolute;
+  right: 80rpx;
+}
+ .container_box .column .open image{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top:46rpx;
+}
+.hr{
+  height:2rpx;
+  background-color: #d4d2d2;
+  margin:20rpx 0 20rpx 34rpx;
+}
+.container_box .columns,.container_box .more{
+  display: flex;
+  flex-direction: row;
+  font-size: 34rpx;
+  height: 50rpx;
+
+}
+.container_box .columns .label,.container_box .more .label{
+margin-left: 40rpx;
+color:rgb(34, 34, 34);
+}
+.container_box .columns .name{
+color:rgb(119, 119, 119);
+position: absolute;
+right: 80rpx;
+}
+.container_box .columns .open image,.container_box .more .open image{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top:4rpx;
+}
+.container_box .columns .names{
+color:rgb(119, 119, 119);
+position: absolute;
+right: 40rpx;
+}
+.address{
+  margin-top: 40rpx;
+  background: white;
+  height:90rpx;
+}
+.address  .columns{
+  display: flex;
+  flex-direction: row;
+  font-size: 34rpx;
+  height: 50rpx;
+  padding-top:20rpx;
+}
+.columns image{
+width:60rpx;
+height: 60rpx;
+position: absolute;
+right: 90rpx;
+}

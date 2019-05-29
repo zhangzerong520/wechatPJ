@@ -1,0 +1,244 @@
+<view class="top">
+  <view class="header">
+    <image src="/assets/home/logo.png"></image>
+  </view>
+</view>
+
+
+
+<view class="haibao">
+  <!-- 推荐轮播图 -->
+  <swiper class="swiper" indicator-dots="{{indicatorts}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 宫格导航 -->
+<view class="nav">
+
+  <view class="item" bindtap='showAll'>
+    <image src="/assets/home/nav/nav1.png"></image>
+    <view class="text">华软资讯</view>
+  </view>
+
+  <view class="item" bindtap='showMedium'>
+    <image src="/assets/home/nav/nav10.png"></image>
+    <view class="text">华软视频</view>
+  </view>
+
+  <view class="item" bindtap='showLearing'>
+    <image src="/assets/home/nav/nav12.png"></image>
+    <view class="text">学术预告</view>
+  </view>
+
+  <view class="item" bindtap='showZs'>
+    <image src="/assets/home/nav/nav11.png"></image>
+    <view class="text">招生就业</view>
+  </view>
+</view>
+
+<view class="hrs" />
+
+
+<view class="school_swiper">
+  <view id="0" class="tab {{currentTab==0 ? 'select' : 'normal'}}" data-current="0" bindtap="switchNav">
+    学校简介
+    <image src="/assets/home/icon/school.png" style="padding-left:20rpx;width:50rpx;height:50rpx;"></image>
+  </view>
+
+  <view id="1" class="tab {{currentTab==1 ? 'select' : 'normal'}}" data-current="1" bindtap="switchNav">办学特色
+    <image src="/assets/home/icon/specific.png" style="padding-left:20rpx;width:50rpx;height:50rpx;"></image>
+  </view>
+
+</view>
+
+
+<view class="page_bottom">
+  <swiper current='{{currentTab}}' style='height:3560rpx' bindchange="bindChange">
+    <!-- 学校介绍 -->
+    <swiper-item>
+
+      <view class="introduction">
+        <view class="title">·学校简介·</view>
+        <view class="details">
+          广州大学华软软件学院（简称华软学院）成立于2002年，2006年经国家教育部批准为实施本科层次教育的全日制普通高等学校，是以IT人才培养为特色的独立学院，是广东省大学生创新创业教育示范学校、广东省和广州市“众创空间”（试点单位）、广东省和广州市两级国际服务外包人才培训机构、广州市创新创业（孵化）示范基地、应用技术大学联盟信息技术专业协作会副理事长单位、中国服务贸易协会专家委员会副理事长单位、中国校企协同产学研创新联盟常务理事单位、广东省民政厅首批5A级社会组织。学院坐落在享有“北回归线上的明珠”美誉的从化经济开发区高技术产业园、即将开通的地铁14号线在正门旁设有站点，交通便利。华软校园景色秀美、环境怡人，一渠两湖布局雅致，丝木棉花绽放瑰伟，是师生治学读书的理想之所。
+        </view>
+      </view>
+      <view class="school_img">
+        <image src="/assets/home/sisejie.png"></image>
+      </view>
+
+      <!-- 介绍 -->
+      <view class='culture'>
+
+        <view class='news_show'>
+          <text class="title">·校园文化·</text>
+          <view class="show_number" bindtap='showPic'>
+            <text class="num">全部</text>
+            <image src="/assets/home/icon/next.png"></image>
+          </view>
+        </view>
+
+        <scroll-view scroll-x="true" style='width:100%;'>
+          <view class="content">
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/03/2017.01.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/03/40.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/01/2017.01.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/01/35.JPG"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/01/40.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/05/DSC00208.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/49.jpg"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/28.JPG"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/251.JPG"></image>
+            </view>
+            <view class="scorll_pic">
+              <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/22.JPG"></image>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+
+      <view class='news_show'>
+        <text class="title">·校园资讯·</text>
+        <view class="show_number" bindtap='showAll'>
+          <text class="num">全部</text>
+          <image src="/assets/home/icon/next.png"></image>
+        </view>
+      </view>
+
+      <view class="hr1"></view>
+
+      <view class='news_list'>
+
+        <view class="news_item" bindtap="Entrymedium">
+          <view class="news_title">【视频】2019届毕业设计作品展开幕 252件作品呈现创意元素</view>
+
+          <view class="video">
+            <video id="myVideo" class="myVideo" src="https://news.sise.edu.cn/Uploads/video/201812121.mp4" custom-cache="{{false}}">
+            </video>
+            <cover-view class="controls" style="display:{{tab_image}};width:100%;">
+              <cover-image src="https://news.sise.edu.cn/Uploads/2018-12-12/5c10d05d281fc.jpg" />
+            </cover-view>
+            <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+              <cover-image bindtap="bindplay" src="/assets/home/icon/play.png" style="padding-left:20rpx;width:120rpx;" />
+            </cover-view>
+
+
+            <view class="public_info">
+              <view class="name">2019-5-12</view>
+            </view>
+          </view>
+        </view>
+        <view class='hr7'></view>
+
+
+        <view class="news_item2" bindtap='EntryNews1'>
+          <view class="news_info">
+            <view class="news_title">华软学院梁冠军董事长出席“四海同春”慰侨演出（纽约）文艺晚会（图文）</view>
+            <view class="public_info">
+              <view class="name">2019-5-16</view>
+
+            </view>
+          </view>
+          <image class="other_img" src="https://www.sise.com.cn/Uploads/2019-03-09/5c8291ce722c9.jpg"></image>
+        </view>
+
+
+        <view class='hr3'></view>
+
+        <view class="news_item1" bindtap='EntryNews2'>
+          <view class="news_title">第十六届“青牛杯”软件设计大赛总决赛圆满落幕（图文）</view>
+          <view class="new_imgshow">
+            <image class="left_img" src="https://news.sise.com.cn/Uploads/2019-05-13/5cd9209c88dcb.jpg"></image>
+            <image class="other_img" src="https://news.sise.edu.cn/Uploads/2019-05-13/5cd92147c5807.jpg"></image>
+            <image class="other_img" src="https://news.sise.com.cn/Uploads/2019-05-13/5cd920d85555f.JPG"></image>
+          </view>
+          <view class="public_info">
+            <view class="name">2019-3-12</view>
+          </view>
+        </view>
+
+        <view class='hr3'></view>
+
+        <view class="news_item2" bindtap='EntryNews3'>
+          <view class="news_info">
+            <view class="news_title">华软跑族连续5次出征“清马” 载誉而归（图文）</view>
+            <view class="public_info">
+              <view class="name">2018-12-29</view>
+
+            </view>
+          </view>
+          <image class="other_img" src="https://news.sise.edu.cn/Uploads/2019-03-17/5c8e53b807227.jpg"></image>
+        </view>
+
+        <!-- <view class="news_item1" bindtap='EntryNews3'>
+          <view class="news_title">华软学院开展校园治乱专项行动及实验教学场所安全隐患排查(图文)</view>
+          <view class="new_imgshow">
+            <image class="left_img" src="https://news.sise.edu.cn/Uploads/2018-12-29/5c271a491f4d1.jpg"></image>
+            <image class="other_img" src="https://news.sise.com.cn/Uploads/2019-05-10/5cd5346f9f187.JPG"></image>
+            <image class="other_img" src="https://news.sise.com.cn/Uploads/2019-05-10/5cd5347b6fe18.JPG"></image>
+          </view>
+          <view class="public_info1">
+            <view class="name">2019-5-17</view>
+          </view>
+        </view> -->
+
+
+        <view class='hr3'></view>
+        <view class="bottom">
+          <view class="hr4"></view>
+          <view>我是有底线的</view>
+          <view class="hr5"></view>
+        </view>
+
+      </view>
+
+
+
+    </swiper-item>
+
+
+
+    <swiper-item>
+
+
+
+      <view class='view_img'>
+        <block wx:for="{{imglist}}" wx:key="*">
+          <view class="product_introduction">
+            <view class="box_horizontal">
+              <view class="product_box_left">
+                <image src="{{item}}" data-index="{{index}}" mode='aspectFill' bindtap="previewImage"></image>
+              </view>
+            </view>
+          </view>
+        </block>
+
+
+      </view>
+
+
+    </swiper-item>
+  </swiper>
+</view>

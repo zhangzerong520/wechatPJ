@@ -1,0 +1,26 @@
+page {
+  background-color: #00CD00;
+  background-image: url("http://172.16.112.27/assets/bg2.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  height: 100%;
+}
+
+.reset {
+  color: rgb(250, 250, 250);
+  font-size: 24rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+}
+
+.title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.mycanvas {
+  width: 600rpx;
+  height: 600rpx;
+  margin: 100rpx auto;
+}

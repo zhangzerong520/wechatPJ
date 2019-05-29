@@ -1,0 +1,4 @@
+
+<view class="top_img">
+<image src='{{userInfo.avatarUrl}}'></image>
+</view>

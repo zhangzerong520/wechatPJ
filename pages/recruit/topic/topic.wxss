@@ -1,0 +1,38 @@
+/* pages/demo/demo.wxss */
+
+.title {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  height: 100rpx;
+  border-bottom: #92918f 2rpx dotted;
+}
+
+.answer {
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: rgb(83, 83, 83);
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+  letter-spacing: 2rpx;
+}
+
+.img {
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+
+.img image {
+  width: 400rpx;
+  height: 400rpx;
+}
+.imgs{
+  margin-top: 40rpx;
+  text-align: center;
+}
+.imgs image{
+  height: 1600rpx;
+  width: 94%;
+}

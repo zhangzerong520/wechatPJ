@@ -1,0 +1,51 @@
+<view>
+<view class="title">
+{{lecture.title}}
+</view>
+<view class="header">
+<view class="time">
+发布时间:{{lecture.time}}
+</view>
+<view class="liulang">
+浏览:{{lecture.readingnum}}
+</view>
+</view>
+
+<view class="title_nr">
+<view class="titl">1.主题:</view>
+<view class="nr">{{lecture.title}}</view>
+</view>
+
+<view class="title_nr">
+<view class="titl">2.时间:</view>
+<view class="nr">{{lecture.times}}</view>
+</view>
+
+<view class="title_nr">
+<view class="titl">3.地点:</view>
+<view class="nr">{{lecture.place}}</view>
+</view>
+
+<view class="title_nr">
+<view class="titl">4.主讲人:</view>
+<view class="nr">{{lecture.people}}</view>
+</view>
+
+<view class="title_nr">
+<view class="titl">5.讲座内容:</view>
+</view>
+<view class="neirong">
+<text>
+{{lecture.neirong}}
+</text>
+</view>
+
+
+
+
+<view class="publish">
+<view class="department">{{lecture.publish}}</view>
+<view class="p_time">2019.4.22</view>
+</view>
+
+</view>

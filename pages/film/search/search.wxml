@@ -1,0 +1,65 @@
+<view class="top_search">
+
+<view class="top_box">
+<view class="search">
+ <icon class="icon" type="search" size="14" color='#a8a8a8'></icon>
+ <input type="text" bindconfirm='confirm' placeholder="搜索影片、影院" placeholder-style='color:#a8a8a8' />
+</view>
+
+<view class="canele" bindtap='redirect_film'>取消</view>
+</view>
+
+<view class="hr"></view>
+
+
+<view class="contain" wx:if="{{!query==0}}">
+
+
+        <block wx:for="{{movielist}}" wx:for-item="fi" wx:key="*">
+          <view class="items">
+
+            <view>
+              <image src="http://172.16.112.27/{{fi.image}}" style="width:80px;height:110px;"></image>
+            </view>
+            <view class="content" bindtap='loadDetail' id="{{fi.id}}">
+              <view class="titles">
+                <view class="title">{{fi.title}}</view>
+
+                <view wx:if="{{fi.is3D==1}}" class="play_form">
+                  <view class="dd">3D</view>
+                  <view class="form">IMAX</view>
+                </view>
+
+                <view wx:else class="play_form1">
+                  <view class="dd">2D</view>
+                  <view class="form">中国巨幕</view>
+                </view>
+              </view>
+
+              <view class="score">淘票票评分
+                <text class="scores">{{fi.score}}</text>
+              </view>
+              <view class="director">
+                <text class="director_name">2019年{{fi.playTime}}</text>
+              </view>
+              <view class="actor">
+                <text class="actor_name">{{fi.people.diretor}}  {{fi.people.actor1}} {{fi.people.actor2}} </text>
+              </view>
+            
+            </view>
+           
+            <view wx:if="{{fi.isPlay==1}}" class="buy">
+              购票
+            </view>
+            <view wx:else class="pre_buy">
+              预售
+            </view>
+          </view>
+        <view class="hr1"></view>
+        </block>
+   
+ 
+
+</view>
+
+</view>

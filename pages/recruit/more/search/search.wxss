@@ -1,0 +1,63 @@
+page{
+  background: #f3f3f3;
+}
+
+.top_box{
+  display: flex;
+  flex-direction: row;
+
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  background: white;
+  width: 80%;
+  height: 60rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.search .icon{
+  padding-left: 40rpx;
+  padding-top: 16rpx;
+}
+.search input{
+  padding-top:4rpx;
+  padding-left: 20rpx;
+  caret-color:rgb(28, 28, 219);
+}
+
+.canele{
+  color:#60b0f4;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 26rpx;
+  margin-left: 18rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 94%;
+  margin-left: 20rpx;
+  border-bottom: #f1e8af 2rpx dotted;
+}
+
+.box .title {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  max-width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box .time {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 36rpx;
+  font-size: 26rpx;
+  color: rgb(41, 138, 230);
+}

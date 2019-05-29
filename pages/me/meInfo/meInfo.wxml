@@ -1,0 +1,53 @@
+<view class='container_box'>
+
+  <view class="column" bindtap='showAvatar'>
+    <text>头像</text>
+    <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+    <view class="open">
+      <image src="/assets/me/next.png"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="columns">
+    <text class="label">名字</text>
+    <text class="name">{{userInfo.nickName}}</text>
+    <view class="open">
+      <image src="/assets/me/next.png"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="columns">
+    <text class="label">微信号</text>
+    <text class="names">zhangzerong66</text>
+  </view>
+  <view class="hr"></view>
+
+  <view class="columns" bindtap='showMywm'>
+    <text class="label" >我的二维码</text>
+    <image class="evm" src="/assets/me/vm.png"></image>
+    <view class="open">
+      <image src="/assets/me/next.png"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="more" bindtap='showMore'>
+    <text class="label">更多</text>
+    <view class="open">
+      <image src="/assets/me/next.png"></image>
+    </view>
+  </view>
+
+
+  <view class="address">
+    <view class="columns">
+      <text class="label">我的地址</text>
+      <view class="open">
+        <image src="/assets/me/next.png"></image>
+      </view>
+    </view>
+  </view>
+
+</view>

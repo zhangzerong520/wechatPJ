@@ -1,0 +1,30 @@
+<view class='container_box'>
+
+<view class="column">
+<text class="label">性别</text>
+<text class="name">男</text>
+<view class="open"> <image src="/assets/me/next.png"></image></view>
+</view>
+<view class="hr"></view>
+
+<view class="columns">
+<text class="label">地区</text>
+<text class="name">广东 汕头</text>
+<view class="open"> <image src="/assets/me/next.png"></image></view>
+</view>
+<view class="hr"></view>
+
+<view class="columns">
+<text class="label">邮箱</text>
+<text class="name">619173463@qq.com</text>
+<view class="open"> <image src="/assets/me/next.png"></image></view>
+</view>
+<view class="hr"></view>
+
+<view class="columns">
+<text class="label">个性签名</text>
+<view class="names">心若没有栖息的地方,到哪里都是流浪。</view>
+<view class="open"> <image src="/assets/me/next.png"></image></view>
+</view>
+
+</view>

@@ -1,0 +1,77 @@
+<view class="cts">
+
+
+  <view   wx:if="{{canIUse}}" class="Userinfo" bindtap='showUserInfo'>
+    <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+    <view class="userInfo">
+      <view class="nickName">{{userInfo.nickName}}</view>
+      <view class="evm">
+      <view class='number'>微信号：zhangzerong66 </view>
+      <image src="/assets/me/vm.png"></image>
+      </view>
+    </view>
+    <view class="open">
+      <image src="/assets/me/next.png"></image>
+    </view>
+
+  </view>
+
+
+<button  class="btstyle"
+ wx:if="{{!canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+
+<view class='hr'></view>
+
+
+<view class="nav">
+
+  <view class="item" bindtap='showMovie'>
+    <image src="/assets/home/nav/nav10.png"></image>
+    <view class="text">淘票票电影</view>
+  </view>
+
+  <view class="item" bindtap='showTeenage'>
+    <image src="/assets/home/nav/nav4.png"></image>
+    <view class="text">青年之声</view>
+  </view>
+
+  <view class="item" bindtap='showBaibaox'>
+    <image src="/assets/home/nav/nav5.png"></image>
+    <view class="text">掌上校园</view>
+  </view>
+
+  <view class="item" bindtap='showyl'>
+    <image src="/assets/home/nav/nav13.png"></image>
+    <view class="text">休闲娱乐</view>
+  </view>
+  
+</view>
+<view class="nav">
+
+  <view class="item" bindtap='showHelp'>
+    <image src="/assets/home/nav/nav16.png"></image>
+    <view class="text">爱心义举</view>
+  </view>
+
+  <view class="item" bindtap='showReading'>
+    <image src="/assets/home/nav/nav6.png"></image>
+    <view class="text">读书吧</view>
+  </view>
+
+
+  <view class="item" bindtap='showMy'>
+    <image src="/assets/home/nav/nav14.png"></image>
+    <view class="text">Mysise</view>
+  </view>
+
+   <view class="item" bindtap='showmap'>
+    <image src="/assets/home/nav/nav15.png"></image>
+    <view class="text">全景华软</view>
+  </view>
+  
+</view>
+
+<view class="hrs" />
+
+
+</view>

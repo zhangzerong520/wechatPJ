@@ -1,0 +1,210 @@
+<view class="title">
+  <image src="../../assets/zhaosheng/title.png"></image>
+</view>
+
+
+<view class="haibao">
+  <!-- 推荐轮播图 -->
+  <swiper class="swiper" indicator-dots="{{indicatorts}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="zs_flag">
+
+  <view class="left_flag aa">
+    <view class="img">
+      <image src="../../assets/zhaosheng/icon1.png"></image>
+    </view>
+    <view class="word">
+      <view class="little_title">
+        <text>国际班</text>
+      </view>
+      <view class="little_desc">
+        <text>国外留学</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="left_flag dd">
+    <view class="img">
+      <image src="../../assets/zhaosheng/icon2.png"></image>
+    </view>
+    <view class="word">
+      <view class="little_title">
+        <text>招生计划</text>
+      </view>
+      <view class="little_desc">
+        <text>华软欢迎你</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class="school_swiper">
+  <view id="0" class="tab {{currentTab==0 ? 'select' : 'normal'}}" data-current="0" bindtap="switchNav">
+    招生动态
+  </view>
+
+  <view id="1" class="tab {{currentTab==1 ? 'select' : 'normal'}}" data-current="1" bindtap="switchNav">学子风采
+  </view>
+
+
+  <view class="more" bindtap='showmore' data-flag='0'>
+    <view class="mword">MORE</view>
+    <view class="imgs">
+      <image src="../../assets/zhaosheng/more.png"></image>
+    </view>
+  </view>
+
+</view>
+
+<view class="hr"></view>
+
+<swiper current='{{currentTab}}' style='height:520rpx' bindchange="bindChange">
+
+  <!-- 招生动态 -->
+  <swiper-item>
+    <block wx:if="{{pb.id<=5}}" wx:for="{{publicsInfo.publicList}}" wx:for-item="pb" wx:key="*">
+      <view class="box" data-lecture-url='{{pb.url}}' bindtap='entryDetail'>
+        <view class="title">
+          {{pb.title}}
+        </view>
+        <view class="time">
+          {{pb.time}}
+        </view>
+      </view>
+    </block>
+
+  </swiper-item>
+
+
+
+
+
+
+  <swiper-item>
+    <!-- 学子风采 -->
+    <view class="box" data-lecture-url='https://mp.weixin.qq.com/s/QK7esO5dpA7IynmvXn-QPg' bindtap='entryDetail'>
+      <view class="title">
+        职规赛 | 我院学子晋级第九届职规赛省复赛
+      </view>
+      <view class="time">
+        2019-05-15
+      </view>
+    </view>
+
+    <view class="box" data-lecture-url='https://mp.weixin.qq.com/s/hKD2Ek72SJy4y1S2Ab8b3Q' bindtap='entryDetail'>
+      <view class="title">
+        “放飞梦想，校友助航”，四位腾讯大咖校友齐分享
+      </view>
+      <view class="time">
+        2018-11-22
+      </view>
+    </view>
+
+    <view class="box" data-lecture-url='https://mp.weixin.qq.com/s/hKD2Ek72SJy4y1S2Ab8b3Q' bindtap='entryDetail'>
+      <view class="title">
+        学子返校 | 软件系06届毕业生欢聚华软
+      </view>
+      <view class="time">
+        2018-11-11
+      </view>
+    </view>
+
+  </swiper-item>
+
+</swiper>
+
+<!-- 
+<view class="hrs"></view> -->
+
+<view class="topic">
+  <view class="consult">
+    资讯热点
+  </view>
+  <view class="more" bindtap='showmore' data-flag='1'>
+    <view class="mword">MORE</view>
+    <view class="imgs">
+      <image src="../../assets/zhaosheng/more.png"></image>
+    </view>
+  </view>
+</view>
+<view class="hr"></view>
+
+<block wx:if="{{tp.id<=5}}" wx:for="{{toplicsInfo.topicsList}}" wx:for-item="tp" wx:key="*">
+  <view class="box" data-topic-id='{{tp.id}}' bindtap='entryDetails'>
+    <view class="title">
+      {{tp.flag}} {{tp.title}}
+    </view>
+    <view class="time">
+      {{tp.time}}
+    </view>
+  </view>
+
+</block>
+
+<view class='culture'>
+
+  <view class='news_show'>
+    <text class="title">·校园风光·</text>
+    <view class="show_number" bindtap='showPic'>
+      <text class="num">MORE</text>
+      <image src="../../assets/zhaosheng/more.png"></image>
+    </view>
+  </view>
+
+  <scroll-view scroll-x="true" style='width:100%;'>
+    <view class="content">
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299065-5350.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299140-3896.JPG"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1490675594-9016.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299103-4414.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1513130014-1672.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299078-2095.JPG"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299092-2969.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="http://yun-campus-res.oss-cn-shenzhen.aliyuncs.com/recruit/article/1505299128-6088.jpg"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/251.JPG"></image>
+      </view>
+      <view class="scorll_pic">
+        <image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/neirong/04/22.JPG"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="bottom">
+  <text class="title">·在线咨询·</text>
+  <view class="aboutme">
+    <text class="infos">关于我们</text>
+    <text class="welcome">欢迎报考广州大学华软软件学院 </text>
+    <text class="infos">联系我们</text>
+    <text class="welcome">学校联系地址：广东省广州市从化区经济开发区高技术产业园广从南路548号</text>
+    <text class="welcome">学校邮政编码：510990 </text>
+    <text class="welcome">招生热线电话：020-87818781，020-87818808</text>
+    <text class="welcome">招生传真号码：020-87818808 </text>
+  </view>
+</view>

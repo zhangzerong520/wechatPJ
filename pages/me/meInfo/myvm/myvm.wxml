@@ -1,0 +1,32 @@
+<view>
+
+  <view class="box">
+
+    <view class="userInfo">
+      <view class="avatar">
+        <image src="{{userInfo.avatarUrl}}"> </image>
+      </view>
+      <view class="Info">
+        <view class="name_sex">
+          <view class="name">{{userInfo.nickName}}</view>
+          <image wx:if="{{userInfo.gender ==1}}"  src="/assets/me/man.png" ></image>
+          <image wx:else src="/assets/me/woman.png"></image>
+        </view>
+        <view class="ares">
+          <text>广东 汕头</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="myvm"> 
+    <image src="/assets/me/mevm.jpg"> </image>
+    </view>
+     
+     <view class="addWx">
+     <text>扫一扫上面的二维图案，加我微信</text>
+     </view>
+
+  </view>
+
+
+</view>

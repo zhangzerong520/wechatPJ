@@ -1,0 +1,70 @@
+page { 
+  background-color: #f3f3f3; 
+}
+.container_box{
+  background: white;
+  width: 100%;
+  height: 410rpx;
+}
+.container_box .column{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10rpx;
+  height: 70rpx;
+}
+
+.container_box .column text{
+margin-left: 40rpx;
+margin-top: 20rpx;
+font-size: 34rpx;
+color:rgb(68, 67, 67);
+}
+.container_box .column .name{
+color:rgb(119, 119, 119);
+position: absolute;
+right: 80rpx;
+}
+ .container_box .column .open image{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top:26rpx;
+}
+.hr{
+  height:2rpx;
+  background-color: #d4d2d2;
+  margin:20rpx 0 20rpx 34rpx;
+}
+.container_box .columns,.container_box .more{
+  display: flex;
+  flex-direction: row;
+  font-size: 34rpx;
+  height: 50rpx;
+
+}
+.container_box .columns .label{
+margin-left: 40rpx;
+color:rgb(34, 34, 34);
+
+}
+.container_box .columns .name{
+color:rgb(119, 119, 119);
+position: absolute;
+right: 80rpx;
+}
+.container_box .columns .open image{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  right: 30rpx;
+  margin-top:4rpx;
+}
+.container_box .columns .names{
+color:rgb(119, 119, 119);
+position: absolute;
+right: 80rpx;
+width: 440rpx;
+height:100rpx;
+text-align: right;
+}

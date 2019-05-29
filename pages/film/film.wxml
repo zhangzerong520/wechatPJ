@@ -1,0 +1,200 @@
+<view class="top">
+  <view class="header">
+    <view class="area" bindtap='show_area'>
+      广州
+      <image src="/assets/me/zhankai.png"></image>
+    </view>
+
+    <view class="search_view" bindtap='search_view'>
+      <icon class="icon" type="search" size="12" color='rgb(247, 194, 194)'></icon>
+      <input type="text" placeholder="搜索影片、影院" disabled='false' placeholder-style='color:rgb(247, 194, 194);' />
+    </view>
+  </view>
+</view>
+
+
+
+<view class="haibao">
+  <!-- 推荐轮播图 -->
+  <swiper class="swiper" indicator-dots="{{indicatorts}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"  >
+    <block wx:for="{{imgUrls}}" wx:key="*">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 宫格导航 -->
+<view class="nav">
+
+  <view class="item">
+    <image src="/assets/home/nav/nav2.png"></image>
+    <view class="text">超值抢购</view>
+  </view>
+
+  <view class="item">
+    <image src="/assets/home/nav/nav14.png"></image>
+    <view class="text">大侦探皮卡丘</view>
+  </view>
+
+  <view class="item">
+    <image src="/assets/home/nav/nav3.png"></image>
+    <view class="text">会员中心</view>
+  </view>
+
+  <view class="item">
+    <image src="/assets/home/nav/nav4.png"></image>
+    <view class="text">分享有礼</view>
+  </view>
+</view>
+
+<view class="hrs" />
+
+<view class='movie_show'>
+  <text class="title">热映影片</text>
+  <view class="show_number" bindtap='showAll'>
+    <text class="num">全部{{movieInfo.filmlist.length}}部</text>
+    <image src="/assets/me/next.png"></image>
+  </view>
+</view>
+
+<scroll-view scroll-x="true" style='width:100%;'>
+  <view class="movie_box">
+    
+    <block wx:for="{{movieInfo.filmlist}}" wx:for-item="fi" wx:key="*">
+    <view class="movie" bindtap='loadDetail' id="{{fi.id}}">
+      <image src="http://172.16.112.27/{{fi.image}}" ></image>
+      <text class="movie_name">{{fi.title}}</text>
+      <view wx:if="{{fi.isPlay==1}}" class="buy">购票</view>
+      <view wx:else class="pre_buy">预售</view>
+   
+    </view>
+    </block>
+
+    <view class="movie1">
+      <view class="sum_show">
+        <view class="word">
+          <text>全部</text>
+          <view class="hr1"></view>
+          <text>{{movieInfo.filmlist.length}}部</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="hr" />
+
+<view class='movie_show'>
+  <text class="title">即将上映</text>
+  <view class="show_number" bindtap='showWillAll'>
+    <text class="num">全部</text>
+    <image src="/assets/me/next.png"></image>
+  </view>
+</view>
+
+<scroll-view scroll-x="true" style='width:100%;'>
+  <view class="movie_box">
+ <block wx:for="{{movieInfo.filmlist}}" wx:for-item="pls" wx:key="*">
+    <view  wx:if="{{pls.isPlay==0}}" class="movie" bindtap='loadDetails' id="{{pls.id}}" >
+      <image src="http://172.16.112.27/{{pls.image}}"></image>
+      <text class="movie_name">{{pls.title}}</text>
+      <view class="time">{{pls.playTime}}</view>
+    </view>
+</block>
+
+    <view class="movie1">
+      <view class="sum_show">
+        <view class="word1">
+          <text>全部</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="hr" />
+
+<view class='movie_show'>
+  <text class="title">精彩推荐</text>
+  <view class="refresh">
+    <image src="/assets/me/refresh.png"></image>
+    <text class="num">获取新内容</text>
+  </view>
+</view>
+
+<view class='hr3'></view>
+
+<view class='news_list'>
+
+  <view class="news_item">
+    <view class="news_title">以凡人之力，比肩申明！钢铁侠剧情向混剪，看托尼的内心与责任</view>
+
+    <view class="video">
+      <video id='video'  src='{{videoUrl}}' controls="true" objectFit="cover">
+      </video>
+      <view class="public_info">
+        <view class="name">银河补习班</view>
+        <view class="comment">53评</view>
+        <view class="times">刚刚</view>
+      </view>
+    </view>
+  </view>
+   <view class='hr7'></view>
+
+
+    <view class="news_item2">
+    <view class="news_info">
+    <view class="news_title">《大侦探皮卡丘》正在热映中，首周收获票房3亿美元</view>
+     <view class="public_info">
+        <view class="name">荣哥娱乐</view>
+        <view class="comment">231评</view>
+        <view class="times">3小时前</view>
+      </view>
+    </view>
+    <image class="other_img" src="http://172.16.112.27/assets/news/news8.jpeg"></image>
+    </view>
+  
+
+  <view class='hr3'></view>
+
+  <view class="news_item1">
+    <view class="news_title">《复仇者联盟4：终局之战》中国创21项票房记录 全球首周周末票房近12亿美元</view>
+    <view class="new_imgshow">
+      <image class="left_img" src="http://172.16.112.27/assets/news/news1.jpg"></image>
+      <image class="other_img" src="http://172.16.112.27/assets/news/news2.jpg"></image>
+      <image class="other_img" src="http://172.16.112.27/assets/news/news3.jpg"></image>
+    </view>
+     <view class="public_info">
+        <view class="name">复仇者联盟4：终局之战</view>
+        <view class="times">刚刚</view>
+      </view>
+  </view>
+   
+   <view class='hr3'></view>
+  <view class="news_item1">
+    <view class="news_title">《哥斯拉2：怪兽之王》海外口碑大爆 被赞“迄今为止最疯狂的怪兽巨制”</view>
+    <view class="new_imgshow">
+      <image class="left_img" src="http://172.16.112.27/assets/news/news4.jpg"></image>
+      <image class="other_img" src="http://172.16.112.27/assets/news/news5.jpg"></image>
+      <image class="other_img" src="http://172.16.112.27/assets/news/news6.jpg"></image>
+    </view>
+     <view class="public_info1">
+        <view class="name">哥斯拉2：怪兽之王</view>
+        <view class="comment">1评</view>
+        <view class="times">1小时前</view>
+      </view>
+  </view>
+    <view class='hr3'></view>
+
+
+  <view class="bottom">
+  <view class="hr4"></view>
+  <view>我是有底线的</view>
+  <view class="hr5"></view>
+  </view>
+
+</view>

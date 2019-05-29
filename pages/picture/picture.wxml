@@ -1,0 +1,30 @@
+<view>
+
+<view class="fengmian">
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/mid_biaoti.JPG"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='1'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/08.jpg"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='2'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/07.JPG"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='3'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/05.jpg"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='4'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/09.jpg"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='5'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/10.jpg"></image>
+</view>
+
+<view class="scenery" bindtap="entryDetail" data-pic-id='6'>
+<image src="https://www.sise.com.cn/sise/fengmian/fmgs_59/images/fmgs/04.jpg"></image>
+</view>
+</view>

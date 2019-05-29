@@ -1,0 +1,21 @@
+<view>
+
+  <view class="title">
+  {{topic.flag}}{{topic.title}}
+  </view>
+
+ <view class="answer">
+ {{topic.answer}}
+ </view>
+ 
+
+<view wx:if="{{topic.img}}" class="imgs">
+<image src="http://pic.bibibi.net/upload/ueditor/php/upload/image/20180612/1528790008360702.jpg"></image>
+</view>
+
+ <view class="img">
+ <image src="/assets/zhaosheng/gzh.png"></image>
+ </view>
+ 
+
+</view>

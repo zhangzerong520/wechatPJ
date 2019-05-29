@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/me/me",
+    "pages/yule/yule",
+    "pages/home/home",
+    "pages/film/film",
+    "pages/recruit/recruit",
+    "pages/public/public",
+    "pages/learing/learing",
+    "pages/picture/picture",
+    "pages/medium/medium",
+    "pages/news/news"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "欢迎你进入校园地图"
+    }
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "selectedColor": "#CC1004",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/home/tarBar/menu-0.png",
+        "selectedIconPath": "assets/home/tarBar/menu-1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "assets/home/tarBar/me-0.png",
+        "selectedIconPath": "assets/home/tarBar/me-1.png"
+      }
+    ]
+  }
+}

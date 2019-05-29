@@ -1,0 +1,35 @@
+ <view class='news_list'>
+     <view class="news_item">
+         
+    <view class="public">
+    <view class='logo'><image src="../../../assets/medium/logo.jpg" ></image></view>
+    <view class='huaruan'>广大华软</view>
+    </view>    
+
+          <view class="video">
+            <video id="myVideo" class="myVideo" src="{{medium.video}}" custom-cache="{{false}}">
+            </video>
+            <cover-view class="controls" style="display:{{tab_image}};width:100%;">
+              <cover-image src="{{medium.coverimg}}" />
+            </cover-view>
+            <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+              <cover-image bindtap="bindplay" src="../../../assets/medium/play.png" style="padding-left:20rpx;width:120rpx;" />
+            </cover-view>
+
+ <view class="news_title">{{medium.title}}</view>
+            <view class="public_info">
+              <view class="share" style='margin-left:20rpx;padding-top:6rpx;'>分享</view>
+              <view><image src="../../../assets/medium/wechar.png" style='width:46rpx;height:46rpx;padding-left:30rpx;'></image></view>
+                <view><image src="../../../assets/medium/ies.png" style='width:42rpx;height:42rpx;padding-left:30rpx;'></image></view>
+             
+             <view class="views">
+                 <view><image src="../../../assets/medium/view.png" style='width:42rpx;height:42rpx;padding-right:10rpx;'></image></view>
+                 <view class="reading" style='padding-top:4rpx;'>{{medium.readingnum}}</view>
+                 </view>
+            </view>
+          </view>
+        </view>
+       
+  
+
+      </view>

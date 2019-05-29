@@ -1,0 +1,127 @@
+<view class="bg-blur">
+  <image src="http://172.16.112.27/{{movie.image}}"></image>
+</view>
+<view class="canve">
+</view>
+
+<view class="movie_info">
+  <view class="img">
+    <image src="http://172.16.112.27/{{movie.image}}"> </image>
+  </view>
+
+  <view class="movie_detail">
+    <view class="top_info ">
+      <text class="tx_title">{{movie.title}}</text>
+      <text class="tx_intro">{{movie.englishtitle}}</text>
+    </view>
+    <view class="will_watch">{{movie.willWatch}}万人想看</view>
+    <view class="moviesDt">
+      <view class="tx_type">{{movie.type}}</view>
+      <view class="tx_area">{{movie.playAreaDuration}}</view>
+      <view class="tx_times">2019年{{movie.playTime}}中国大陆上映</view>
+    </view>
+  </view>
+</view>
+
+<view class="like_score">
+
+  <view class="liked">
+    <view class="img">
+      <image src="/assets/me/like.png"></image>
+    </view>
+    <view  class="word">想看</view>
+  </view>
+
+
+  <view class="liked">
+    <view class="img">
+      <image src="/assets/me/collect2.png"></image>
+    </view>
+    <view class="word">评分</view>
+  </view>
+</view>
+
+<view class="movie_intro">
+  <text>{{movie.introduce}}
+</text>
+</view>
+
+<view class="hr3" />
+
+<view class='movie_show'>
+  <text class="title">演职人员</text>
+</view>
+
+<scroll-view scroll-x="true" style='width:100%;'>
+  <view class="movie_box">
+    <view class="movie">
+      <image src="http://172.16.112.27/{{movie.people.diretorImg}}"></image>
+      <text class="movie_name">{{movie.people.diretor}}</text>
+      <view class="time">导演</view>
+    </view>
+    <view class="movie">
+      <image src="http://172.16.112.27/{{movie.people.actor1Img}}"></image>
+      <text class="movie_name">{{movie.people.actor1}}</text>
+      <view class="time">演员</view>
+    </view>
+   <view class="movie">
+      <image src="http://172.16.112.27/{{movie.people.actor2Img}}"></image>
+      <text class="movie_name">{{movie.people.actor2}}</text>
+      <view class="time">演员</view>
+    </view>
+
+   <view class="movie">
+      <image src="http://172.16.112.27/{{movie.people.actor3Img}}"></image>
+      <text class="movie_name">{{movie.people.actor3}}</text>
+      <view class="time">演员</view>
+    </view>
+ 
+
+   <view class="movie" wx:if="{{movie.people.actor4Img!=null}}">
+      <image src="http://172.16.112.27/{{movie.people.actor4Img}}"></image>
+      <text class="movie_name">{{movie.people.actor4}}</text>
+      <view class="time">演员</view>
+    </view>
+  </view>
+
+</scroll-view>
+
+<view class="hrs" />
+
+<view class='movie_show'>
+  <text class="title">视频和剧照</text>
+  <view class="show_number" bindtap='showWillAll'>
+    <text class="num">5</text>
+    <image src="/assets/me/next.png"></image>
+  </view>
+</view>
+<scroll-view scroll-x="true" style='width:100%;'>
+  <view class="movie_box">
+    <view class="photo">
+      <image src="http://172.16.112.27/{{movie.stage.pic1}}"></image>
+    </view>
+
+    <view class="photo">
+      <image src="http://172.16.112.27/{{movie.stage.pic2}}"></image>
+    </view>
+
+    <view class="photo">
+      <image src="http://172.16.112.27/{{movie.stage.pic3}}"></image>
+    </view>
+
+    <view class="photo">
+      <image src="http://172.16.112.27/{{movie.stage.pic4}}"></image>
+    </view>
+
+    <view class="photo">
+      <image src="http://172.16.112.27/{{movie.stage.pic5}}"></image>
+    </view>
+
+  </view>
+</scroll-view>
+
+<view class="gg">
+
+
+
+</view>

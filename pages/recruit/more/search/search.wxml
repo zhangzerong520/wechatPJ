@@ -1,0 +1,53 @@
+<view class="top_search">
+
+
+  <view wx:if="{{flag==0}}" class="top_box">
+    <view class="search">
+      <icon class="icon" type="search" size="14" color='#a8a8a8'></icon>
+      <input type="text" bindconfirm='confirm' placeholder="请输入搜索内容" placeholder-style='color:#a8a8a8' />
+    </view>
+    <view class="canele" bindtap='redirect_film'>取消</view>
+  </view>
+
+  <view wx:if="{{flag==1}}" class="top_box">
+    <view class="search">
+      <icon class="icon" type="search" size="14" color='#a8a8a8'></icon>
+      <input type="text" bindconfirm='confirms' placeholder="请输入搜索内容" placeholder-style='color:#a8a8a8' />
+    </view>
+    <view class="canele" bindtap='redirect_film'>取消</view>
+  </view>
+
+
+  <view class="hr"></view>
+
+
+  <view class="contain">
+
+    <block wx:if="{{queryList}}" wx:for="{{queryList}}" wx:for-item="pb" wx:key="*">
+      <view class="box" data-lecture-url='{{pb.url}}' bindtap='entryDetail'>
+        <view class="title">
+          {{pb.title}}
+        </view>
+        <view class="time">
+          {{pb.time}}
+        </view>
+      </view>
+
+    </block>
+
+
+    <block wx:if="{{toplists}}" wx:for="{{toplists}}" wx:for-item="tp" wx:key="*">
+      <view class="box" data-topic-id='{{tp.id}}' bindtap='entryDetails'>
+        <view class="title">
+          {{tp.flag}}{{tp.title}}
+        </view>
+        <view class="time">
+          {{tp.time}}
+        </view>
+      </view>
+
+    </block>
+
+  </view>
+
+</view>

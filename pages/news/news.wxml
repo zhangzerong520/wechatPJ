@@ -1,0 +1,41 @@
+<block wx:for="{{news}}" wx:for-item="news" wx:key="*">
+
+
+
+
+
+  <view wx:if="{{news.img2==null||news.img3==null}}" class="news_item2" bindtap='Detail' data-new-id='{{news.id}}'>
+    <view class="news_info">
+      <view class="news_title">{{news.title}}</view>
+      <view class="public_info">
+        <view class="name">{{news.time}} </view>
+
+      </view>
+    </view>
+    <image class="other_img" src="{{news.img1}}"></image>
+    <view class='hr3'></view>
+  </view>
+
+
+
+  <view wx:else class="news_item1" bindtap='Detail' data-new-id='{{news.id}}'>
+    <view class="news_title">{{news.title}}</view>
+    <view class="new_imgshow">
+      <image class="left_img" src="{{news.img1}}"></image>
+      <image class="other_img" src="{{news.img2}}"></image>
+      <image class="other_img" src="{{news.img3}}"></image>
+    </view>
+    <view class="public_info">
+      <view class="name">{{news.time}}</view>
+    </view>
+
+  </view>
+  <view class='hr3'></view>
+</block>
+
+
+  <!-- <view wx:if="{{page>totalPages}}" class="bottom">
+    <view class="hr4"></view>
+    <view>我是有底线的</view>
+    <view class="hr5"></view>
+  </view> -->

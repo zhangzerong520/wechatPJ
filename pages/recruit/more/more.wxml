@@ -1,0 +1,41 @@
+
+
+<view  wx:if="{{publicsInfo.publicList}}" class="search_view" bindtap='entrySearch' data-flag="0" >
+<icon class="icon" type="search" siez="16"></icon>
+<input type="text" placeholder="请输入搜索内容" placeholder-style="font-size:15px;" 
+ disabled='true'
+/>
+</view>
+
+    <block wx:if="{{publicsInfo.publicList}}"  wx:for="{{publicsInfo.publicList}}" wx:for-item="pb" wx:key="*">
+      <view  class="box" data-lecture-url='{{pb.url}}' 
+  bindtap='entryDetail' 
+  >
+    <view class="title">
+      {{pb.title}}
+    </view>
+    <view class="time">
+      {{pb.time}}
+    </view>
+  </view>
+</block>
+
+  
+  <view  wx:if="{{!publicsInfo.publicList}}" class="search_view" bindtap='entrySearch' data-flag="1" >
+<icon class="icon" type="search" siez="16"></icon>
+<input type="text" placeholder="请输入搜索内容" placeholder-style="font-size:15px;" 
+ disabled='true'
+/>
+</view>
+    <block wx:if="{{!publicsInfo.publicList}}"  wx:for="{{toplicsInfo.topicsList}}" wx:for-item="tp" wx:key="*">
+      <view  class="box" data-topic-id='{{tp.id}}' 
+  bindtap='entryDetails' 
+  >
+    <view class="title">
+     {{tp.flag}} {{tp.title}}
+    </view>
+    <view class="time">
+      {{tp.time}}
+    </view>
+  </view>
+</block>

@@ -1,0 +1,61 @@
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: rgb(245, 127, 30);
+  margin-top: 10rpx;
+ text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  color: rgb(139, 139, 139);
+  font-size: 26rpx;
+  margin-top: 30rpx;
+}
+
+.header .time {
+  margin-left: 140rpx;
+}
+
+.header .liulang {
+  margin-left: 40rpx;
+}
+
+.title_nr {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.title_nr .titl {
+  color: rgb(231, 135, 24);
+  letter-spacing: 2rpx;
+}
+.title_nr  .nr{
+  padding-top:12rpx;
+}
+.neirong{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 32rpx;
+  margin-right: 20rpx;
+}
+.title_nrs {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  margin-top: 80rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+.publish{
+  position: absolute;
+  right:50rpx;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color:rgb(46, 46, 46);
+}
+.publish .department{
+  padding-left: 30rpx;
+}

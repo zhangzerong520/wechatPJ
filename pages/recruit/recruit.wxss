@@ -1,0 +1,277 @@
+.title image {
+  width: 100%;
+  height: 140rpx;
+}
+
+.haibao {
+  border-radius: 30rpx;
+}
+
+.swiper {
+  width: 100%;
+  height: 300rpx;
+  top: 160rpx;
+}
+
+.swiper .slide-image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.zs_flag {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.zs_flag .left_flag {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  width: 46%;
+  height: 200rpx;
+}
+
+.aa {
+  background: #fa6d52;
+}
+
+.dd {
+  background: #8dc153;
+}
+
+.zs_flag .left_flag .img {
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+}
+
+.zs_flag .left_flag image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.zs_flag .left_flag .word {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.zs_flag .left_flag .word .little_title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: white;
+  margin-top: 50rpx;
+}
+
+.zs_flag .left_flag .word .little_desc {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: white;
+}
+
+.school_swiper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.more {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 20rpx;
+  margin-top: 36rpx;
+}
+
+.more .mword {
+  color: #60b0f4;
+  font-size: 28rpx;
+}
+
+.more .imgs {
+  margin-left: 10rpx;
+}
+
+.more .imgs image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.school_swiper .tab {
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  width: 180rpx;
+  height: 70rpx;
+}
+
+.tab {
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.select {
+  background: #60b0f4;
+  color: white;
+}
+
+.hr {
+  height: 4rpx;
+  background-color: #60b0f4;
+  width: 100%;
+}
+
+.hrs {
+  margin-top: 4rpx;
+  margin-bottom: 14rpx;
+  height: 2rpx;
+  background-color: #afafaf;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 94%;
+  margin-left: 20rpx;
+  border-bottom: #f1e8af 2rpx dotted;
+}
+
+.box .title {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  max-width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box .time {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 36rpx;
+  font-size: 26rpx;
+  color: rgb(41, 138, 230);
+}
+
+.topic {
+  display: flex;
+  flex-direction: row;
+}
+
+.consult {
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  width: 180rpx;
+  height: 70rpx;
+  text-align: center;
+  padding-top: 20rpx;
+  background: #60b0f4;
+  color: white;
+}
+
+.culture {
+  margin-top: 40rpx;
+}
+
+.culture .title {
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content .scorll_pic {
+  width: 85%;
+  height: 360rpx;
+  border: #cac6c6 1px solid;
+  box-shadow: 0px 2rpx 2rpx 2rpx #adadad;
+  margin: 10rpx 0 20rpx 30rpx;
+  padding-top: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-bottom: 10rpx;
+  background: white;
+}
+
+.content .scorll_pic image {
+  width: 600rpx;
+  height: 360rpx;
+}
+
+.news_show {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+
+.news_show .title {
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+  color: #60b0f4;
+}
+
+.news_show .show_number .num {
+  margin-top: 18rpx;
+  position: absolute;
+  padding-right: 10rpx;
+  right: 64rpx;
+  font-size: 28rpx;
+  color: #60b0f4;
+}
+
+.news_show .show_number image {
+  margin-top: 16rpx;
+  position: absolute;
+  right: 26rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom .title {
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+  color: #60b0f4;
+}
+
+.bottom  .aboutme {
+  width: 90%;
+  height: 440rpx;
+  border-radius: 30rpx;
+  border: #60b0f4 1px solid;
+  box-shadow: 0px 2rpx 2rpx 2rpx #adadad;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.bottom  .aboutme .infos {
+  color: #1e649f;
+  font-size: 36rpx;
+  padding-top:30rpx;
+}
+
+.bottom  .aboutme .welcome {
+  color: rgb(98, 99, 100);
+  font-size: 30rpx;
+}

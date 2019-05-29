@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class='view'>
+  <map longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" covers="{{covers}}" show-location>
+
+  </map>
+</view>

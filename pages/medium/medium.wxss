@@ -1,0 +1,122 @@
+.news_list{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hr7{
+  height:2rpx;
+  background-color: #e7e2e2;
+  margin-top: 32rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.news_list .news_item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 560rpx;
+  margin-top: 20rpx;
+  
+}
+.news_list .news_item .news_title,.news_list .news_item1 .news_title{
+  font-size: 32rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.video{
+  position: relative;
+  width: 92%;
+  height: 400rpx;
+  margin-top:20rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+.video-play-btn{
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto
+}
+.video-duration{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #fff;
+}
+
+.video .public_info{
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color:#a1a1a1;
+  margin-top: 12rpx;
+}
+.video .public_info .name{
+  margin-left: 30rxp;
+}
+
+.news_item1{
+ display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 340rpx;
+  margin-top: 20rpx;
+}
+.news_item1 .new_imgshow{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+}
+.news_item1 .new_imgshow image{
+  width:220rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+.news_item1 .new_imgshow .left_img{
+  margin-left: 30rpx;
+}
+.news_item1 .new_imgshow .other_img{
+  margin-left: 10rpx;
+}
+.news_item1 .public_info,.news_item1 .public_info1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  margin-top: 14rpx;
+  color: #a1a1a1;
+}
+.news_item1 .public_info .name,.news_item1 .public_info1 .name{
+ margin-left: 30rpx;
+}
+
+
+
+
+.myVideo{ 
+  width:100%;
+  height: calc(9 * 750rpx / 16);
+  background-color: #fff;
+}
+.controls{
+  position:absolute;
+  z-index:1; 
+  background-color: #fff;    
+   height: calc(9 * 750rpx / 16); 
+  margin-top:-430rpx;
+}
+.play{ 
+    position:absolute;
+    left:50%;
+    margin-top:-300rpx;
+    margin-left:-80rpx;    
+}
+
+
